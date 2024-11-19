@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let movie=[ "spiderman","ironman","captain america","ironman","the hulk","thor"]
+        for(let i = 0;i<=movie.length-1;i++){
+            console.log(movie[i])
+        }
+        for(let y in movie){
+            console.log(movie[y])
+        }
+        for(let z of movie){
+            console.log(z)
+        }
+        //remove elements
+        let list =[1,2,3,4,5,6,7,8,9];
+        var first = list.shift()
+        var last = list.pop()
+        console.log(first,last)
+        //reverse an array
+        let rev=[1,2,3,4,5,6,7,8,9,10];
+        var res =[]
+        for(i=rev.length-1;i>=0;i--){
+            res.push(rev[i])
+        }
+        console.log(res)
+        //even sum and odd sum
+        let arry=[12,3,5,6,22,56,29];
+        let oddsum=0;
+        let evensum = 0;
+        for(i=0;i<=arry.length-1;i++){
+            if(arry[i]%2 ==0){
+                evensum+=arry[i];
+
+            }
+            else{
+                oddsum+=arry[i];
+            }
+
+        }
+        console.log(evensum);
+        console.log(oddsum);
+        //types of data types 
+        let num = []
+        let string =[]
+        let bool = []
+        let obj = []
+        let arr=["apple","banana","mango","potato",3,4,5,6,true,{name:"object"}];
+        for(x of arr){
+            if(typeof(x)=="number"){
+                num.push(x)
+            }
+            else if (typeof(x)=="string"){
+                string.push(x)
+            }
+            else if(typeof(x)=="boolean"){
+                bool.push(x)
+            }
+            else{
+                obj.push(x)
+            }
+        }
+        console.log(num);
+        console.log(string);
+        console.log(bool);
+        console.log(obj);
+    </script>
+    
+</body>
+</html>
